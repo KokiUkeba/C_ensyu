@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{はじめに}{2}{0}{1}
+\beamer@sectionintoc {2}{Lesson1}{4}{0}{2}
+\beamer@sectionintoc {3}{Lesson2}{5}{0}{3}
+\beamer@sectionintoc {4}{Lesson3}{7}{0}{4}
+\beamer@sectionintoc {5}{Lesson4}{10}{0}{5}
+\beamer@sectionintoc {6}{Lesson5}{13}{0}{6}
+\beamer@sectionintoc {7}{Lesson6}{16}{0}{7}
