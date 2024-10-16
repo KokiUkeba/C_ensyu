@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.19)  17 JUN 2024 09:01
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.19)  16 OCT 2024 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,26 +707,31 @@ y)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemedolphin.st
 y)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.
-sty)) (/usr/local/texlive/2024/texmf-dist/tex/latex/ascmac/ascmac.sty
+sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/bxdpx-beamer/bxdpx-beamer.sty
+Package: bxdpx-beamer 2016/08/06 v0.3
+\bxqbd@ghost=\box94
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
 \@savetbaselineshift=\dimen310
 \@saveybaselineshift=\dimen311
-\scb@x=\box94
-\scscb@x=\box95
+\scb@x=\box95
+\scscb@x=\box96
 \@bw=\dimen312
-\@nbox=\box96
-\@nbody=\box97
+\@nbox=\box97
+\@nbody=\box98
 \@scw=\dimen313
-\ascmac@hoboxa=\box98
-\ascmac@hoboxb=\box99
+\ascmac@hoboxa=\box99
+\ascmac@hoboxb=\box100
 \@itemh=\dimen314
 \@iboxpos=\toks47
-\@iboxstr=\box100
-\@bwsp=\box101
-\@@bwsp=\box102
+\@iboxstr=\box101
+\@bwsp=\box102
+\@@bwsp=\box103
 \@bcal=\count340
 \shaderule=\dimen315
 ))
@@ -744,49 +749,92 @@ File: pxjahyper-uni.def 2023/03/01 v1.3
 )
 Package pxjahyper Info: The setup for hyperref 'unicode' is applied.
 )
-Package hyperref Info: Option `setpagesize' set `false' on input line 22.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count341
+\lst@gtempboxa=\box104
+\lst@token=\toks48
+\lst@length=\count342
+\lst@currlwidth=\dimen316
+\lst@column=\count343
+\lst@pos=\count344
+\lst@lostspace=\dimen317
+\lst@width=\dimen318
+\lst@newlines=\count345
+\lst@lineno=\count346
+\lst@maxwidth=\dimen319
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
+\c@lstnumber=\count347
+\lst@skipnumbers=\count348
+\lst@framebox=\box105
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/03/11 1.10a listings configuration
+))
+Package: listings 2024/03/11 1.10a (Carsten Heinz)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/jvlisting/jvlisting.sty
+Package: jvlisting 2011/11/17 v0.7 Formatted Program Listings
+\jvl@idt=\count349
+\jvl@tmphyphenchar=\count350
+\jvl@fileinput=\read3
+\listingskipamount=\skip65
+\listingindent=\dimen320
+\prelistingpenalty=\count351
+\listingpenalty=\count352
+\postlistingpenalty=\count353
+)
+Package hyperref Info: Option `setpagesize' set `false' on input line 26.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 22.
+(hyperref)                setting the option has no effect on input line 26.
 
 
 Package hyperref Warning: Unknown document division name (tocdepth) on input li
-ne 22.
+ne 26.
 
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 22.
-Package hyperref Info: Option `colorlinks' set `true' on input line 22.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 26.
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2024-04-11 L3 backend support: dvipdfmx
-\g__graphics_track_int=\count341
-\l__pdf_internal_box=\box103
-\g__pdf_backend_annotation_int=\count342
-\g__pdf_backend_link_int=\count343
-) (./C_ensyu.aux)
+\g__graphics_track_int=\count354
+\l__pdf_internal_box=\box106
+\g__pdf_backend_annotation_int=\count355
+\g__pdf_backend_link_int=\count356
+) (./C_ensyu.aux
+
+LaTeX Warning: Label `selectionSort' multiply defined.
+
+)
 \openout1 = `C_ensyu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -821,53 +869,53 @@ LaTeX Font Info:    ... okay on input line 28.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 28.
+Package hyperref Info: Link coloring ON on input line 56.
 (./C_ensyu.out) (./C_ensyu.out)
 \@outlinefile=\write5
 \openout5 = `C_ensyu.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 56.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 56.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 56.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 56.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 28.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 56.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 56.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 56.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 28.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 28.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 56.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -892,58 +940,57 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-theorem-dic
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./C_ensyu.nav)
+)
+\c@lstlisting=\count357
+ (./C_ensyu.nav)
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 28.
+(Font)              scaled to size 5.77332pt on input line 56.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 28.
+(Font)              scaled to size 5.77332pt on input line 56.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 29.
+(Font)              scaled to size 13.85594pt on input line 57.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 29.
+(Font)              scaled to size 13.85594pt on input line 57.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 29.
+(Font)              scaled to size 7.69775pt on input line 57.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 29.
+(Font)              scaled to size 7.69775pt on input line 57.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 3.84888pt on input line 29.
+(Font)              scaled to size 3.84888pt on input line 57.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 3.84888pt on input line 29.
+(Font)              scaled to size 3.84888pt on input line 57.
  [1
 
-] (./C_ensyu.toc) [2
+] [2
 
-] [3]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+] (./C_ensyu.toc) [3
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 50.
+(Font)              scaled to size 11.54663pt on input line 81.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.54663pt on input line 50.
+(Font)              scaled to size 11.54663pt on input line 81.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 81.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 81.
  [4
 
 ] [5
 
 ]
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 84.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 9.6222pt on input line 84.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 84.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 84.
-
 [6
 
 ] [7
@@ -954,28 +1001,65 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 
 ] [10
 
-]
-File: Figure_1.png Graphic file (type bmp)
-<Figure_1.png>
-
-Overfull \vbox (8.34705pt too high) detected at line 158
- []
-
-[11
+] [11
 
 ] [12
 
-]
-Overfull \vbox (5.24754pt too high) detected at line 188
- []
-
-[13
+] [13
 
 ] [14
 
 ] [15
 
 ] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+]
+File: Figure_1.png Graphic file (type bmp)
+<Figure_1.png>
+
+Overfull \vbox (8.34705pt too high) detected at line 354
+ []
+
+[21
+
+]
+Overfull \vbox (5.24754pt too high) detected at line 375
+ []
+
+[22
+
+] [23
+
+] [24
+
+]
+\openout4 = `C_ensyu.vrb'.
+
+ (./C_ensyu.vrb
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 7.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 7.
+) [25
+
+]
+\openout4 = `C_ensyu.vrb'.
+
+ (./C_ensyu.vrb) [26
+
+]
+\openout4 = `C_ensyu.vrb'.
+
+ (./C_ensyu.vrb)
+[27
 
 ]
 \tf@nav=\write6
@@ -993,16 +1077,20 @@ pLaTeX2e <2023-02-14u04>+1, based on
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `C_ensyu.out' has not changed.
-(rerunfilecheck)             Checksum: 71BD1CCA0E23CAD079600C2C0B1B7DCB;597.
+(rerunfilecheck)             Checksum: 1899869666A056850CF6691A8A7FEBDA;712.
  ) 
 Here is how much of TeX's memory you used:
- 21856 strings out of 476156
- 425322 string characters out of 5792954
- 1934596 words of memory out of 5000000
- 43718 multiletter control sequences out of 15000+600000
- 602254 words of font info for 101 fonts, out of 8000000 for 9000
+ 23631 strings out of 476156
+ 450615 string characters out of 5792954
+ 2004596 words of memory out of 5000000
+ 45466 multiletter control sequences out of 15000+600000
+ 603979 words of font info for 98 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 101i,15n,107p,393b,753s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,15n,107p,393b,1260s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C_ensyu.dvi (16 pages, 132892 bytes).
+Output written on C_ensyu.dvi (27 pages, 270108 bytes).

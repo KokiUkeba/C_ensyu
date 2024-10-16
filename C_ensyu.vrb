@@ -1,0 +1,18 @@
+\frametitle{ソートアルゴリズム}
+    \framesubtitle{カウントソート(counting sort)}
+    \begin{itembox}[l]{Q7.3}
+        言葉で説明するのは大変なので自分で調べるとよい。これをCで実装せよ。
+    \end{itembox}
+    \begin{lstlisting}[gobble=8, caption=selectionSort.py, label=selectionSort]
+        data = []
+
+        for i in range(len(data)):
+            mini = i
+
+            for j in range(i + 1, len(data)):
+                if (data[j] < data[mini]):
+                    mini = j
+
+            if (mini !=  i):
+                data[i], data[mini] = data[mini], data[i]
+    \end{lstlisting}

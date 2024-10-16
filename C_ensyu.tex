@@ -3,11 +3,15 @@
 \usetheme{Boadilla}
 \setbeamertemplate{navigation symbols}{}
 
+\usepackage{bxdpx-beamer}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amsfonts}
 \usepackage{ascmac}
 \usepackage{graphics}
 \usepackage{pxjahyper}
+\usepackage{hyperref}
+\usepackage{listings, jvlisting}
 \hypersetup{%
  setpagesize=false,%
  bookmarks=true,%
@@ -20,6 +24,30 @@
  pdfsubject={},%
  pdfauthor={},%
  }
+\lstset{
+ basicstyle={\ttfamily},
+ identifierstyle={\small},
+ commentstyle={\smallitshape},
+ keywordstyle={\small\bfseries},
+ ndkeywordstyle={\small},
+ stringstyle={\small\ttfamily},
+ frame={tb},
+ breaklines=true,
+ columns=[l]{fullflexible},
+ numbers=left,
+ xrightmargin=0zw,
+ xleftmargin=3zw,
+ numberstyle={\scriptsize},
+ stepnumber=1,
+ numbersep=1zw,
+ lineskip=-0.5ex,
+ showstringspaces=false,
+ showtabs=false,
+ showspaces=false,
+ tabsize=4,
+}
+
+%\renewcommand\familydefault{\ttdefault}
 
 \title{演習問題}
 \author{Koki Ukeba}
@@ -27,25 +55,82 @@
 
 \begin{document}
 \maketitle
-\tableofcontents
 
 \section{はじめに}
 \begin{frame}
 	\frametitle{はじめに}
-	　この資料は機械数理工学科1年後期に行われる、プログラミング情報処理の授業を参考に作成しています。\\
-	　資料内の演習問題に対する、参考コードはgithub.comのKokiUkebaのリポジトリにあるはずです。動作環境はgcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0です。
+	　資料内の演習問題に対する、参考コードはgithub.comのKokiUkebaにあります。動作環境はgcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0です。
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+    \tableofcontents
 \end{frame}
 
 \section{Lesson1}
 \begin{frame}
-	\frametitle{Hello world!!}
-	\begin{itembox}[l]{Q-1}
-		"Hello world"という文字列を出力するコードを作成してください.
+	\frametitle{プログラミングの基本}
+    \framesubtitle{文字列の出力}
+	\begin{itembox}[l]{Q1.1}
+		"Hello world"という文字列を出力するコードを作成せよ.
 	\end{itembox}
 	\begin{block}{入力}
 	\end{block}
 	\begin{block}{出力}
 		Hello world.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{プログラミングの基本}
+    \framesubtitle{文字定数}
+	\begin{itembox}[l]{Q1.2}
+		"$\backslash$"?"を出力するコードを作成せよ。
+	\end{itembox}
+	\begin{block}{入力}
+	\end{block}
+	\begin{block}{出力}
+        $\backslash$"?
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{プログラミングの基本}
+    \framesubtitle{文字定数}
+	\begin{itembox}[l]{Q1.3}
+        16進数のdeadbabeを10進数で出力してください。
+	\end{itembox}
+	\begin{block}{入力}
+	\end{block}
+	\begin{block}{出力}
+        -559039810
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{プログラミングの基本}
+    \framesubtitle{文字定数}
+	\begin{itembox}[l]{Q1.4}
+        16進数のdeadbabeを入力し,10進数表示が-559039810であることを確認せよ。
+	\end{itembox}
+	\begin{block}{入力}
+        deadbabe
+	\end{block}
+	\begin{block}{出力}
+        -559039810
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{プログラミングの基本}
+    \framesubtitle{文字定数}
+	\begin{itembox}[l]{Q1.5}
+        10進数の-559039810を入力し,16進数表示がdeadbabeであることを確認せよ。
+	\end{itembox}
+	\begin{block}{入力}
+        -559039810
+	\end{block}
+	\begin{block}{出力}
+        deadbabe
 	\end{block}
 \end{frame}
 
@@ -68,32 +153,110 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{解説}
-	\framesubtitle{for文やwhile文を用いて、級数を計算します。}
-	\begin{itemize}
-	\item for文を用いる際は、適当な回数for文を回すとよいでしょう。\\
-	また、while文を用いる際は$\frac{\pi}{4}$にどれだけ近づいたかを条件に用いるとよいでしょう。
-	\item int型同士の割り算は、少数切り捨てとなることに注意してください。\\
-		\begin{itemize}
-			\item 計算の際にキャスト演算子で型を明示的に変更するのがいいと思います。
-			\item どちらかが浮動小数点型であれば、暗黙の型変換により小数も残ります。
-		\end{itemize}
-	\item 数学関数を用いる際はmath.hが必要になります。
-	\item printfを用いて表示する際に、適切なフォーマット指定子を選択してください。
-	\end{itemize}
+    \frametitle{演算}
+    \framesubtitle{シフト演算子}
+	\begin{itembox}[l]{Q2.1}
+        "$<<$"及び"$>>$"はシフト演算子と呼ばれ,
+        $$x <<(>>) n$$
+        はxを左(右)へn[bit]シフトさせることを意味する。\\
+        この演算子を利用し、入力した整数値$a$の$2^b$倍の値を出力するコードを作成せよ。
+	\end{itembox}
+	\begin{block}{入力}
+        1\\
+        5
+	\end{block}
+	\begin{block}{出力}
+        32
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{演算}
+    \framesubtitle{モジュロ演算子, 否定演算子}
+	\begin{itembox}[l]{Q2.2}
+        "\%"はモジュロ演算子と呼ばれ、
+        $$x \% y$$
+        はｘをｙで割ったときのあまりとなる。\\
+        "!"は否定演算子と呼ばれ、
+        $$!x$$
+        はxが0のときのみ1となる。\\
+        この演算子を利用し、入力した整数値aがbを因数に持つときのみbを出力し、bを因数に持たない場合は0を出力するコードを作成せよ。
+	\end{itembox}
+    \vspace{-30pt}
+    \begin{columns}[t, totalwidth=0.98\linewidth]
+        \begin{column}{.45\linewidth}
+            \begin{block}{入力}
+                1001\\
+                11
+            \end{block}
+        \end{column}
+        \begin{column}{.45\linewidth}
+            \begin{block}{出力}
+                11
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{演算}
+    \framesubtitle{3項演算子}
+	\begin{itembox}[l]{Q2.3}
+        "? :"は3項演算子と呼ばれ,ある式を$expr_{i}(i=1,2,3)$とすると、
+        $$expr_{1} ? expr_{2}:expr_{3}$$
+        は$expr_{1}$が0ではない場合(真の場合)$expr_{2}$の値となり、そうでない場合は$expr_{3}$の値となる。\\
+        この演算子を利用し、整数値aの絶対値を出力するコードを作成せよ。
+	\end{itembox}
+	\begin{block}{入力}
+        -18
+	\end{block}
+	\begin{block}{出力}
+        18
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{演算}
+    \framesubtitle{ASCII}
+	\begin{itembox}[l]{Q2.4}
+        ASCII文字セットのある1文字(半角英語)を入力した際に,その文字の大文字小文字を変換するコードを作成せよ。半角英語以外の値が入力されたときの処理は自由にしてよい。
+	\end{itembox}
+	\begin{block}{入力}
+        A
+	\end{block}
+	\begin{block}{出力}
+        a
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{演算}
+    \framesubtitle{変数の型}
+	\begin{itembox}[l]{Q2.5}
+        浮動小数点型の数を入力し、その数の整数部と小数部を分けて表示するコードを作成せよ。
+	\end{itembox}
+	\begin{block}{入力}
+        3.141592
+	\end{block}
+	\begin{block}{出力}
+        3, 0.141592
+	\end{block}
 \end{frame}
 
 \section{Lesson3}
 \begin{frame}
 	\frametitle{条件分岐}
-	\begin{itembox}[l]{Q-3}
+	\begin{itembox}[l]{Q3.1}
 		実数a,b,cが任意に与えられた際に、二次方程式
 		$$ax^2+bx+c=0$$
 		の解を表示するコードを作成してください。(a=0のときの処理は自由にしてください。)
 	\end{itembox}
 	\begin{block}{入力}
+    1\\
+    2\\
+    1
 	\end{block}
-	\begin{block}{出力例1}
+	\begin{block}{出力}
 		$\mathsf{1.0x^2 + 2.0x + 1.0 = 0}$\\
 		$\mathsf{double \ root -1.0e+00}$
 	\end{block}
@@ -115,16 +278,49 @@
 	\end{block}
 \end{frame}
 
+\section{Lesson4}
 \begin{frame}
-	\frametitle{解説}
-	\framesubtitle{判別式を用いて場合分けを行います。}
-	\begin{itemize}
-		\item まず、二次方程式かどうかを判定するのが良いでしょう。
-		\item else ifを用いて書くと見やすいと思います。
-	\end{itemize}
+    \frametitle{反復}
+    \framesubtitle{for文}
+	\begin{itembox}[l]{Q4.1}
+        任意の整数値を入力し、その2進数表記を出力するコードを作成せよ。
+	\end{itembox}
+	\begin{block}{入力}
+        70241
+	\end{block}
+	\begin{block}{出力}
+        00000000000000010001001001100001
+	\end{block}
 \end{frame}
 
-\section{Lesson4}
+\begin{frame}
+    \frametitle{反復}
+    \framesubtitle{while文}
+	\begin{itembox}[l]{Q4.2}
+        任意の正の整数値を入力したとき、その数が素数の場合は1を出力し、素数でない場合は0を出力するコードを作成せよ。
+	\end{itembox}
+	\begin{block}{入力}
+        13
+	\end{block}
+	\begin{block}{出力}
+        1
+	\end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{反復}
+    \framesubtitle{素数判定}
+	\begin{itembox}[l]{Q4.3}
+        1～10000000の間にある素数を全て出力するコードを作成せよ。\\
+        ただし実行時間が1分を超えるものは不正解とする。
+	\end{itembox}
+	\begin{block}{入力}
+	\end{block}
+	\begin{block}{出力}
+        (略)
+	\end{block}
+\end{frame}
+
 \begin{frame}
 	\frametitle{Newton-method}
 	\begin{itembox}[l]{Q-4}
@@ -155,15 +351,6 @@
 	\begin{figure}[h]
 		\includegraphics[width=65mm]{Figure_1.png}
 	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{解説}
-	\framesubtitle{while文で繰り返し計算します。}
-	\begin{itemize}
-		\item 条件を満たすまで繰り返しを行うので、while文を使います。
-		\item 絶対値を使うので、\#include\space\<math.h\>を忘れないようにしましょう。
-	\end{itemize}
 \end{frame}
 
 \section{Lesson5}
@@ -209,15 +396,6 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}
-	\frametitle{解説}
-	\framesubtitle{while文を用いて、nが割り切れるまでiを増やすということをやります。}
-	\begin{itemize}
-		\item 再起処理を使えばコードが簡潔に書けるでしょう。
-		\item 処理の速さを追及してみてください。
-	\end{itemize}
-\end{frame}
-
 \section{Lesson6}
 \begin{frame}
 	\frametitle{ベクトルの内積}
@@ -227,5 +405,67 @@
 		$$b = (N, N-1, N-2,\dots,1)$$
 		さらに、$N=1001$とし、その内積となす角を求めよ。
 	\end{itembox}
+\end{frame}
+
+\section{ソートアルゴリズム}
+\begin{frame}[t, fragile]
+    \frametitle{ソートアルゴリズム}
+    \framesubtitle{バブルソート(bubble sort)}
+    \begin{itembox}[l]{Q7.1}
+        バブルソートとは、隣り合う要素の大小を比較しながら整列させるアルゴリズムである。これをCで実装せよ。下にPythonで実装したコードの一部を示した.
+    \end{itembox}
+    \begin{lstlisting}[gobble=8, caption=bubbleSort.py, label=bubbleSort]
+        data = []
+
+        for i in range(20):
+            data.append(randint(0, 100))
+
+        for i in data:
+            for j in range(len(data)-1, 0, -1):
+                if (data[j] < data[j-1]):
+                    data[j], data[j-1] = data[j-1], data[j]
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{ソートアルゴリズム}
+    \framesubtitle{選択ソート(selection sort)}
+    \begin{itembox}[l]{Q7.2}
+        選択ソートとは,要素の最大値または最小値を探索し並び変えるアルゴリズムである。これをCで実装せよ。
+    \end{itembox}
+    \begin{lstlisting}[gobble=8, caption=selectionSort.py, label=selectionSort]
+        data = []
+
+        for i in range(len(data)):
+            mini = i
+
+            for j in range(i + 1, len(data)):
+                if (data[j] < data[mini]):
+                    mini = j
+
+            if (mini !=  i):
+                data[i], data[mini] = data[mini], data[i]
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{ソートアルゴリズム}
+    \framesubtitle{カウントソート(counting sort)}
+    \begin{itembox}[l]{Q7.3}
+        言葉で説明するのは大変なので自分で調べるとよい。これをCで実装せよ。
+    \end{itembox}
+    \begin{lstlisting}[gobble=8, caption=selectionSort.py, label=selectionSort]
+        data = []
+
+        for i in range(len(data)):
+            mini = i
+
+            for j in range(i + 1, len(data)):
+                if (data[j] < data[mini]):
+                    mini = j
+
+            if (mini !=  i):
+                data[i], data[mini] = data[mini], data[i]
+    \end{lstlisting}
 \end{frame}
 \end{document}
