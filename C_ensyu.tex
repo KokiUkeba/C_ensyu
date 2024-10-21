@@ -443,6 +443,72 @@
                 if (data[j] < data[mini]):
                     mini = j
 
+            if (mini != i):
+                data[i], data[mini] = data[mini], data[i]
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[t, fragile, allowframebreaks]
+    \frametitle{ソートアルゴリズム}
+    \framesubtitle{カウントソート(counting sort)}
+    \begin{itembox}[l]{Q7.3}
+        これをCで実装せよ。
+    \end{itembox}
+    \begin{lstlisting}[gobble=8, caption=countingSort.py, label=countingSort]
+        data = []
+        dmin = 0
+        dmax = 100
+        N = 100
+
+        for i in range(N):
+            data.append(random.randint(dmin, dmax))
+
+        mini = data[0]
+        maxi = data[0]
+
+        for i in range(len(data)):
+            if (data[i] < mini):
+                mini = data[i]
+            if (data[i] > maxi):
+                maxi = data[i]
+
+        countLen = maxi - mini + 1
+        count = []
+
+        for i in range(countLen):
+            count.append(0)
+
+        for i in range(len(data)):
+            count[data[i] - mini] += 1
+
+        index = 0
+        i = 0
+        while (index < len(data)):
+            if (count[i] != 0):
+                data[index] = i
+                index += 1
+                count[i] -= 1
+            else:
+                i += 1
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{ソートアルゴリズム}
+    \framesubtitle{マージソート(merge sort)}
+    \begin{itembox}[l]{Q7.4}
+        これをCで実装せよ。
+    \end{itembox}
+    \begin{lstlisting}[gobble=8, caption=mergeSort.py, label=mergeSort]
+        data = []
+
+        for i in range(len(data)):
+            mini = i
+
+            for j in range(i + 1, len(data)):
+                if (data[j] < data[mini]):
+                    mini = j
+
             if (mini !=  i):
                 data[i], data[mini] = data[mini], data[i]
     \end{lstlisting}
@@ -450,11 +516,32 @@
 
 \begin{frame}[t, fragile]
     \frametitle{ソートアルゴリズム}
-    \framesubtitle{カウントソート(counting sort)}
-    \begin{itembox}[l]{Q7.3}
-        言葉で説明するのは大変なので自分で調べるとよい。これをCで実装せよ。
+    \framesubtitle{クイックソート(quiq sort)}
+    \begin{itembox}[l]{Q7.5}
+        これをCで実装せよ。
     \end{itembox}
-    \begin{lstlisting}[gobble=8, caption=selectionSort.py, label=selectionSort]
+    \begin{lstlisting}[gobble=8, caption=mergeSort.py, label=mergeSort]
+        data = []
+
+        for i in range(len(data)):
+            mini = i
+
+            for j in range(i + 1, len(data)):
+                if (data[j] < data[mini]):
+                    mini = j
+
+            if (mini !=  i):
+                data[i], data[mini] = data[mini], data[i]
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{ソートアルゴリズム}
+    \framesubtitle{ヒープソート (heap sort)}
+    \begin{itembox}[l]{Q7.6}
+        これをCで実装せよ。
+    \end{itembox}
+    \begin{lstlisting}[gobble=8, caption=mergeSort.py, label=mergeSort]
         data = []
 
         for i in range(len(data)):

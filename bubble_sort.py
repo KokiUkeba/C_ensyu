@@ -6,8 +6,9 @@ from matplotlib.animation import FuncAnimation
 data = []
 y = []
 x = []
+N = 100
 
-for i in range(20):
+for i in range(N):
     data.append(random.randint(0, 100))
     x.append(i)
 

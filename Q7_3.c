@@ -34,7 +34,7 @@ int main(void)
     }
 
     for (i = 0; i < N; i++) {
-        count[U[i]]++;
+        count[U[i] - min]++;
     }
 
     int index = 0;

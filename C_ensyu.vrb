@@ -1,9 +1,9 @@
 \frametitle{ソートアルゴリズム}
-    \framesubtitle{カウントソート(counting sort)}
-    \begin{itembox}[l]{Q7.3}
-        言葉で説明するのは大変なので自分で調べるとよい。これをCで実装せよ。
+    \framesubtitle{ヒープソート (heap sort)}
+    \begin{itembox}[l]{Q7.6}
+        これをCで実装せよ。
     \end{itembox}
-    \begin{lstlisting}[gobble=8, caption=selectionSort.py, label=selectionSort]
+    \begin{lstlisting}[gobble=8, caption=mergeSort.py, label=mergeSort]
         data = []
 
         for i in range(len(data)):

@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1729062755 "C_ensyu.dvi" "C_ensyu.pdf" "C_ensyu" 1729062755
-  "C_ensyu.dvi" 1729062755 270108 5742ed1a0b93fe02846afaf280a961f6 "latex"
+["dvipdf"] 1729489716 "C_ensyu.dvi" "C_ensyu.pdf" "C_ensyu" 1729489716
+  "C_ensyu.dvi" 1729489715 288020 e3e0973d949ed8b50daca220c5edc931 "latex"
   (generated)
   "C_ensyu.pdf"
-["latex"] 1729062752 "C_ensyu.tex" "C_ensyu.dvi" "C_ensyu" 1729062755
+["latex"] 1729489712 "C_ensyu.tex" "C_ensyu.dvi" "C_ensyu" 1729489716
   "/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty" 1576016050 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty" 1576625223 8371 9d55b8bd010bc717624922fb3477d92e ""
@@ -160,12 +160,12 @@
   "/usr/local/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty" 1677704611 3306 d83802fcf53efd41181daaeea54c0111 ""
   "/usr/local/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper-uni.def" 1677704611 2847 e2db6afefc89086cc759491532d66ab4 ""
   "/usr/local/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty" 1677704611 56813 c694c4db885bdd5f3076d42fc6e6b573 ""
-  "C_ensyu.aux" 1729062755 7775 07eb2ed786ed4ecf8a167a5e8aa781d4 "latex"
-  "C_ensyu.nav" 1729062755 3915 8cc2b28b57d545d382181bae50ab54f7 "latex"
-  "C_ensyu.out" 1729062755 712 1899869666a056850cf6691a8a7febda "latex"
-  "C_ensyu.tex" 1729062747 13013 237301c6b41507e6ae2f7610f64b5077 ""
-  "C_ensyu.toc" 1729062755 374 5b6430ab73b88e295f2e0e5aec0dbf51 "latex"
-  "C_ensyu.vrb" 1729062755 637 fe75350b62e2e2507e699ab0109cd16d "latex"
+  "C_ensyu.aux" 1729489715 9248 d3e172f94f43ace979bd8f7411c8da42 "latex"
+  "C_ensyu.nav" 1729489715 4375 5edb149356c414263c5fe026ff3bde51 "latex"
+  "C_ensyu.out" 1729489715 712 1899869666a056850cf6691a8a7febda "latex"
+  "C_ensyu.tex" 1729489706 15242 7f78000f6e4ef48d0dfc16ab9d6e2964 ""
+  "C_ensyu.toc" 1729489715 374 5b6430ab73b88e295f2e0e5aec0dbf51 "latex"
+  "C_ensyu.vrb" 1729489715 551 d06146abfd737583e32372c3f0ddac32 "latex"
   "Figure_1.png" 1718354411 20217 1c3f574059dfe149ef9b024e214eeedc ""
   (generated)
   "C_ensyu.aux"
