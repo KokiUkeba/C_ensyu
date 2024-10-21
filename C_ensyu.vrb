@@ -1,18 +1,5 @@
 \frametitle{ソートアルゴリズム}
     \framesubtitle{ヒープソート (heap sort)}
     \begin{itembox}[l]{Q7.6}
-        これをCで実装せよ。
+        これをCで実装せよ.
     \end{itembox}
-    \begin{lstlisting}[gobble=8, caption=mergeSort.py, label=mergeSort]
-        data = []
-
-        for i in range(len(data)):
-            mini = i
-
-            for j in range(i + 1, len(data)):
-                if (data[j] < data[mini]):
-                    mini = j
-
-            if (mini !=  i):
-                data[i], data[mini] = data[mini], data[i]
-    \end{lstlisting}
