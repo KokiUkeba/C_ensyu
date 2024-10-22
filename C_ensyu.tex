@@ -135,22 +135,22 @@
 \end{frame}
 
 \section{Lesson2}
-\begin{frame}
-	\frametitle{変数～繰り返しを添えて～}
-	\begin{itembox}[l]{Q-2}
-		ライプニッツ級数
-		$$\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}$$
-		が$\dfrac{\pi}{4}$に収束することを確かめてください.
-		また,その計算結果と$\pi$とを比較してください.
-	\end{itembox}
-	\begin{block}{入力}
-	\end{block}
-	\begin{block}{出力}
-		$\mathsf{calc = 0.7853956634}$\\
-		$\mathsf{M\_PI/4 = 0.7853981634}$\\
-		$\mathsf{dif = 0.0000025000}$
-	\end{block}
-\end{frame}
+%\begin{frame}
+%	\frametitle{変数～繰り返しを添えて～}
+%	\begin{itembox}[l]{Q-2}
+%		ライプニッツ級数
+%		$$\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}$$
+%		が$\dfrac{\pi}{4}$に収束することを確かめてください.
+%		また,その計算結果と$\pi$とを比較してください.
+%	\end{itembox}
+%	\begin{block}{入力}
+%	\end{block}
+%	\begin{block}{出力}
+%		$\mathsf{calc = 0.7853956634}$\\
+%		$\mathsf{M\_PI/4 = 0.7853981634}$\\
+%		$\mathsf{dif = 0.0000025000}$
+%	\end{block}
+%\end{frame}
 
 \begin{frame}
     \frametitle{演算}
@@ -244,39 +244,39 @@
 \end{frame}
 
 \section{Lesson3}
-\begin{frame}
-	\frametitle{条件分岐}
-	\begin{itembox}[l]{Q3.1}
-		実数a,b,cが任意に与えられた際に,二次方程式
-		$$ax^2+bx+c=0$$
-		の解を表示するコードを作成してください.(a=0のときの処理は自由にしてください.)
-	\end{itembox}
-	\begin{block}{入力}
-    1\\
-    2\\
-    1
-	\end{block}
-	\begin{block}{出力}
-		$\mathsf{1.0x^2 + 2.0x + 1.0 = 0}$\\
-		$\mathsf{double \ root -1.0e+00}$
-	\end{block}
-\end{frame}
-
-\begin{frame}
-	\frametitle{条件分岐}
-	\begin{block}{出力例2}
-		$\mathsf{1.0x^2 + 1.0x + 2.0 = 0}$\\
-		$\mathsf{-5.0e-01 + I * 1.3e+00, -5.0e-01 - I * 1.3e+00}$
-	\end{block}
-	\begin{block}{出力例3}
-	$\mathsf{0.0x^2 + 2.0x + 1.0 = 0}$\\
-	$\mathsf{single \ root -5.0e-01}$
-	\end{block}
-	\begin{block}{出力例4}
-		$\mathsf{0.0x^2 + 0.0x + 1.0 = 0}$\\
-		$\mathsf{no\ solution}$
-	\end{block}
-\end{frame}
+%\begin{frame}
+%	\frametitle{条件分岐}
+%	\begin{itembox}[l]{Q3.1}
+%		実数a,b,cが任意に与えられた際に,二次方程式
+%		$$ax^2+bx+c=0$$
+%		の解を表示するコードを作成してください.(a=0のときの処理は自由にしてください.)
+%	\end{itembox}
+%	\begin{block}{入力}
+%    1\\
+%    2\\
+%    1
+%	\end{block}
+%	\begin{block}{出力}
+%		$\mathsf{1.0x^2 + 2.0x + 1.0 = 0}$\\
+%		$\mathsf{double \ root -1.0e+00}$
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}
+%	\frametitle{条件分岐}
+%	\begin{block}{出力例2}
+%		$\mathsf{1.0x^2 + 1.0x + 2.0 = 0}$\\
+%		$\mathsf{-5.0e-01 + I * 1.3e+00, -5.0e-01 - I * 1.3e+00}$
+%	\end{block}
+%	\begin{block}{出力例3}
+%	$\mathsf{0.0x^2 + 2.0x + 1.0 = 0}$\\
+%	$\mathsf{single \ root -5.0e-01}$
+%	\end{block}
+%	\begin{block}{出力例4}
+%		$\mathsf{0.0x^2 + 0.0x + 1.0 = 0}$\\
+%		$\mathsf{no\ solution}$
+%	\end{block}
+%\end{frame}
 
 \section{Lesson4}
 \begin{frame}
@@ -317,84 +317,87 @@
 	\begin{block}{入力}
 	\end{block}
 	\begin{block}{出力}
-        (略)
+        (略)\\
+        real    0m0.607s\\
+        user    0m0.140s\\
+        sys     0m0.459s
 	\end{block}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Newton-method}
-	\begin{itembox}[l]{Q-4}
-		ニュートン法を用いて
-		$$f(x) = x^3-2x^2-3x+3$$
-		の近似解を求めて下さい.\\
-		(初期値を1とし,誤差の許容値$\delta$は$10^{-7}$としてください.)\\
-		($f'(x)$は自分で求めて大丈夫です.)\\
-		(ニュートン法の簡単な説明は次ページにありますが,詳しい解説は各自で調べてください.)
-	\end{itembox}
-	\begin{block}{入力}		
-	\end{block}
-	\begin{block}{出力}
-		7.608767e-01
-	\end{block}
-\end{frame}
+%\begin{frame}
+%	\frametitle{Newton-method}
+%	\begin{itembox}[l]{Q-4}
+%		ニュートン法を用いて
+%		$$f(x) = x^3-2x^2-3x+3$$
+%		の近似解を求めて下さい.\\
+%		(初期値を1とし,誤差の許容値$\delta$は$10^{-7}$としてください.)\\
+%		($f'(x)$は自分で求めて大丈夫です.)\\
+%		(ニュートン法の簡単な説明は次ページにありますが,詳しい解説は各自で調べてください.)
+%	\end{itembox}
+%	\begin{block}{入力}		
+%	\end{block}
+%	\begin{block}{出力}
+%		7.608767e-01
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}
+%	%\frametitle{Newton-method}
+%	\begin{itembox}[l]{ニュートン法}
+%		\begin{enumerate}
+%			\item 初期値$x_a$を求めたい解になるべく近い値にとる.
+%			\item もし$\left\lvert f(x_a) \right\lvert \leq \delta $の場合はこの$x_a$を近似解とする.
+%			\item 上の条件が成り立たない場合は次の代入式により$x_a$を更新して2.へ戻る.
+%				$$x_a = x_a - \frac{f(x_a)}{f'(x_a)}$$
+%		\end{enumerate}
+%	\end{itembox}
+%	\begin{figure}[h]
+%		\includegraphics[width=65mm]{Figure_1.png}
+%	\end{figure}
+%\end{frame}
 
-\begin{frame}
-	%\frametitle{Newton-method}
-	\begin{itembox}[l]{ニュートン法}
-		\begin{enumerate}
-			\item 初期値$x_a$を求めたい解になるべく近い値にとる.
-			\item もし$\left\lvert f(x_a) \right\lvert \leq \delta $の場合はこの$x_a$を近似解とする.
-			\item 上の条件が成り立たない場合は次の代入式により$x_a$を更新して2.へ戻る.
-				$$x_a = x_a - \frac{f(x_a)}{f'(x_a)}$$
-		\end{enumerate}
-	\end{itembox}
-	\begin{figure}[h]
-		\includegraphics[width=65mm]{Figure_1.png}
-	\end{figure}
-\end{frame}
-
-\section{Lesson5}
-\begin{frame}
-	\frametitle{素因数分解}
-	\begin{itembox}[l]{Q-5}
-		変数に2以上の値を代入し,その数を素因数分解して得られる素数をすべて表示してください.\\
-		最終的に変数に119028, 2146654199の2数を代入し出力してください.
-	\end{itembox}
-	\begin{block}{入力}
-	\end{block}
-	\begin{block}{出力例1}
-		429 =\\
-		3 ** 1\\
-		11 ** 1\\
-		13 ** 1\\
-		49238 =\\
-		2 ** 1\\
-		7 ** 1\\
-		3517 ** 1
-	\end{block}
-\end{frame}
-
-\begin{frame}
-	\begin{block}{出力例2}
-		7502751 =\\
-		3 ** 2\\
-		47 ** 1\\
-		17737 ** 1\\
-		5104981 =\\
-		7 ** 1\\
-		17 ** 1\\
-		42899 ** 1\\
-	\end{block}
-	\begin{block}{出力例3}
-		9562 =\\
-		2 ** 1\\
-		7 ** 1\\
-		683 ** 1\\
-		515 =\\
-		5 ** 1\\
-		103 ** 1
-	\end{block}
-\end{frame}
+%\section{Lesson5}
+%\begin{frame}
+%	\frametitle{素因数分解}
+%	\begin{itembox}[l]{Q-5}
+%		変数に2以上の値を代入し,その数を素因数分解して得られる素数をすべて表示してください.\\
+%		最終的に変数に119028, 2146654199の2数を代入し出力してください.
+%	\end{itembox}
+%	\begin{block}{入力}
+%	\end{block}
+%	\begin{block}{出力例1}
+%		429 =\\
+%		3 ** 1\\
+%		11 ** 1\\
+%		13 ** 1\\
+%		49238 =\\
+%		2 ** 1\\
+%		7 ** 1\\
+%		3517 ** 1
+%	\end{block}
+%\end{frame}
+%
+%\begin{frame}
+%	\begin{block}{出力例2}
+%		7502751 =\\
+%		3 ** 2\\
+%		47 ** 1\\
+%		17737 ** 1\\
+%		5104981 =\\
+%		7 ** 1\\
+%		17 ** 1\\
+%		42899 ** 1\\
+%	\end{block}
+%	\begin{block}{出力例3}
+%		9562 =\\
+%		2 ** 1\\
+%		7 ** 1\\
+%		683 ** 1\\
+%		515 =\\
+%		5 ** 1\\
+%		103 ** 1
+%	\end{block}
+%\end{frame}
 
 \section{Lesson6}
 \begin{frame}
